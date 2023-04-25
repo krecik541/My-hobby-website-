@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Wiedźmin | Ankieta</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="icon" type="image/x-icon" href="img/favicon1.ico">
+    </head>
+    <body id="body" class="jasne">
+        <header id="home">
+            <p class="text_shadow">Wiedźmin | Ankieta</p>
+            <figure>
+                <svg width="160" height="160">
+                    <circle cx="80" cy="80" r="80" style="fill:rgb(100, 100, 100);"/>
+                    <circle cx="80" cy="200" r="120" style="fill:black; "/>
+                    <circle cx="80" cy="100" r="200" style="fill:none; stroke: rgb(100, 100, 100);; stroke-width:300"/>
+                    <circle cx="80" cy="50" r="40" style="fill:black; "/>
+                    <rect x="55" y="30" width="50" height="35" rx="10" ry="20" style="fill:white;" />
+                    <rect x="68" y="37" width="10" height="20" rx="10" ry="10"  style="fill:black;" />
+                    <rect x="82" y="37" width="10" height="20" rx="10" ry="10"  style="fill:black;" />
+                    <line x1="50" y1="100" x2="10" y2="60" style="stroke:black;stroke-width:10" />
+                    <circle cx="10" cy="60" r="5" style="fill:black; "/>
+                </svg>
+            </figure>
+        </header>
+
+        <nav>
+            <a href="index.html#home" style="font-size: 2.3vh;">Strona główna</a>
+            <div class="drop">
+                <a href="postaci.html">Postaci</a>
+                <ul>
+                    <li>
+                        <a href="postaci.html#geralt">Geralt z Rivii</a>
+                    </li>
+                    <li>
+                        <a href="postaci.html#ciri">Ciri</a>
+                    </li>
+                    <li>
+                        <a href="postaci.html#yen">Yennefer z Vengerbergu</a>
+                    </li>
+                    <li>
+                        <a href="postaci.html#jaskier">Jakier</a>
+                    </li>
+                    <li>
+                        <a href="postaci.html#triss">Triss Merigold</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="ksiazki.html#home">Książki</a>
+                <ul>
+                    <li>
+                        <a href="ksiazki.html#ostatnie_zyczenie">Ostanie życzenie</a>
+                    </li>
+                    <li>
+                        <a href="ksiazki.html#miecz_przeznaczenie">Miecz przeznaczenia</a>
+                    </li>
+                    <li>
+                        <a href="ksiazki.html#sezon_burz">Sezon burz</a>
+                    </li>
+                    <li>
+                        <a href="ksiazki.html#krew_elfow">Krew elfów</a>
+                    </li>
+                    <li>
+                        <a href="ksiazki.html#czas_pogardy">Czas popgardy</a>
+                    </li>
+                    <li>
+                        <a href="ksiazki.html#chrzest_ognia">Chrzest ognia</a>
+                    </li>
+                    <li>
+                        <a href="ksiazki.html#wieza_jaskolki">Wieża Jaskółki</a>
+                    </li>
+                    <li>
+                        <a href="ksiazki.html#pani_jeziora">Pani Jeziora</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="gry.html">Gry</a>
+                <ul>
+                    <li>
+                        <a href="gry.html#wiedzmin1">Wiedźmin</a>
+                    </li>
+                    <li>
+                        <a href="gry.html#wiedzmin2">Wiedźmin 2: Zabójca królów</a>
+                    </li>
+                    <li>
+                        <a href="gry.html#wiedzmin3">Wiedźmin 3: Dziki Gon</a>
+                    </li>
+                    <li>
+                        <a href="gry.html#gwint">Gwint: Wiedźmińska gra karciana</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="filmy.html">Filmy</a>
+            </div>
+            <div>
+                <a href="kontakt.html"  class="active">Ankieta</a>
+            </div>
+        </nav>
+        
+        <div id="cialo">
+            <div>
+                <form action="cos.php" method="POST">
+                    <label for="name">Imie: </label>
+                    <input type="text" id="name" name="imie" value="" >
+                    <label for="surname">Nazwisko: </label>
+                    <input type="text" id="surname" name="nazwisko" value="" >
+                    <label for="date">Data urodzenia: </label>
+                    <input id="date" type="text">
+                    <p>Płeć:
+                        <input type="radio" name="gender" value="male" >Mężczyzna
+                        <input type="radio" name="gender" value="female" >Kobieta
+                    </p>
+                    <p>Ulubione postacie:
+                        <input type="checkbox" name="bohater" value="geralt" >Geralt
+                        <input type="checkbox" name="bohater" value="ciri" >Ciri
+                        <input type="checkbox" name="bohater" value="yen" >Yennefer
+                        <input type="checkbox" name="bohater" value="jaskier" >Jaskier
+                        <input type="checkbox" name="bohater" value="triss" >Triss
+                    </p>
+                    <p>Ulubiona część książki:
+                        <select>
+                            <option value="1">Ostatnie życzenie</option>
+                            <option value="2">Miecz przeznaczenie</option>
+                            <option value="3">Sezon burz</option>
+                            <option value="4">Krew elfów</option>
+                            <option value="5">Czas pogardy</option>
+                            <option value="6">Chrzest ognia</option>
+                            <option value="7">Wieza Jaskółki</option>
+                            <option value="8">Pani Jeziora</option>
+                        </select>
+                    </p>
+                    <p>Uzasadnij swój wybór:</p>
+                        <textarea rows="5" id="o" cols="50"></textarea>
+                    
+                    <p>
+                        <input type="submit" value="submit" >
+                        <input type="reset" value="reset" >
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <footer> Maciej Szymczak, Informatyka gr. I <br> październik/listopad 2022 </footer>
+        </div>
+    </body>
+</html>
